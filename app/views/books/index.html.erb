@@ -8,7 +8,7 @@
 <table>
 <% @books.each do |book| %>
     <div class="book-comment">
-      <span class="book-title"><%=link_to book.title, book_path(book.id) %></span>
+      <span class="book-title"><%= book.title %></span>
       <span class="book-body"><%= book.body %></span>
       <span class="show"><%=link_to "show", book_path(book.id) %></span>
       <%= link_to "Edit", edit_book_path(book.id) %>
